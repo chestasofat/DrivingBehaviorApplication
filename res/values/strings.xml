@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"DrivingBehaviourApp "</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ride_type">Choose the type of ride</string>
+
+    <string-array name="ride_arrays">
+         <item>Choose the type of ride</item>
+        <item>Auto Rickshaw</item>
+        <item>Car Taxi Cab</item>
+        <item>Bus</item>
+        <item>Two Wheeler</item>
+        <item>Tum Tum(IITB)</item>
+    </string-array>
+
+</resources>

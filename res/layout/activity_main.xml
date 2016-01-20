@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gpstracesproject.MainActivity" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="IIT-B Bus Logger" />
+
+    <Button
+        android:id="@+id/Overspeeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Start"
+        android:layout_marginTop="146dp"
+        android:text="AggAcceleration" />
+
+    <Button
+        android:id="@+id/AggressiveLane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Overspeeding"
+        android:layout_below="@+id/ExcessiveBraking"
+        android:layout_toRightOf="@id/Overspeeding"
+        android:text="AggresiveLane" />
+
+    <Button
+        android:id="@+id/ExcessiveBraking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Start"
+        android:layout_below="@+id/Start"
+        android:layout_marginTop="39dp"
+        android:text="AggrBraking" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/AggressiveLane"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="64dp"
+        android:text="Stop Logging" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Stop"
+        android:layout_alignBottom="@+id/Stop"
+        android:layout_alignLeft="@+id/Overspeeding"
+        android:text="Start Logging" />
+
+    <Button
+        android:id="@+id/busStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ExcessiveBraking"
+        android:layout_alignRight="@+id/AggressiveLane"
+        android:layout_marginRight="23dp"
+        android:text="Bus Stop" />
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Unforeseen Incident (If Any)" />
+    <Button
+        android:id="@+id/remarksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+         android:text="Record Incident"/>
+
+</RelativeLayout>
